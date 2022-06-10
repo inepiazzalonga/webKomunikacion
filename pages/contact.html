@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/style.css">
+   <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <title>Komunikación - Contacto</title>
+</head>
+
+<body>
+
+   <!-- Menú de navegación -->
+   <header>
+      <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <img loading="lazy" src="../img/logo/isologo.png" alt="Komunikación isologo png">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../#home">HOME</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../#us">NOSOTROS</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../#services">SERVICIOS</a>
+                  </li>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">CONTACTO</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Formulario de contacto -->
+   <div class="contactForm">
+      <h1>Comunicate con nosotros</h1>
+      <div class="contactForm__content">
+         <img src="../img/logo/yellowk.png" alt="Komunikación isologo">
+         <form>
+            <input type="text" required placeholder="Nombre">
+            <input type="text" required placeholder="Apellido">
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <select name="consulta" id="consulta" required>
+               <option value="Ecommerce">Ecommerce</option>
+               <option value="Redes">Manejo de Redes Sociales</option>
+               <option value="Otro">Otro</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="8" required placeholder="Mensaje"></textarea>
+            <button type="submit">ENVIAR</button>
+         </form>
+         <img class="contactGif" src="../img/backgrounds/contact-rocket.gif" alt="">
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="footerContainer">
+      <footer>
+         <div>
+            <ul>
+               <li><a href="../#home">Home</a></li>
+               <li><a href="../#us">Nosotros</a></li>
+               <li><a href="../#services">Servicios</a></li>
+               <li><a href="#">Contacto</a></li>
+            </ul>
+         </div>
+
+         <form class="suscribeContainer">
+            <input type="text" placeholder="Ingresa tu mail">
+            <button type="submit" class="btnPurple">Suscribirse</button>
+            <p>Suscribite para recibir las últimas novedades</p>
+         </form>
+
+         <ul class="socialMedia">
+            <li><a href="#"><img loading="lazy" src="../img/socialmedia/wa.png" alt=""></a></li>
+            <li><a href="#"><img loading="lazy" src="../img/socialmedia/ig.png" alt=""></a></li>
+            <li><a href="#"><img loading="lazy" src="../img/socialmedia/fb.png" alt=""></a></li>
+         </ul>
+      </footer>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
