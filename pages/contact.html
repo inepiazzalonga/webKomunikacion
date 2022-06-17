@@ -52,16 +52,16 @@
       <div class="contactForm__content">
          <img src="../img/logo/yellowk.png" alt="Komunikación isologo">
          <form>
-            <input type="text" required placeholder="Nombre">
+            <input type="text" id="nombre" required placeholder="Nombre">
             <input type="text" required placeholder="Apellido">
-            <input type="email" name="email" id="email" required placeholder="Email">
-            <select name="consulta" id="consulta" required>
+            <input type="email" id="email" name="email" id="email" required placeholder="Email">
+            <select name="consulta" id="mensaje" required>
                <option value="Ecommerce">Ecommerce</option>
                <option value="Redes">Manejo de Redes Sociales</option>
                <option value="Otro">Otro</option>
             </select>
             <textarea name="" id="" cols="30" rows="8" required placeholder="Mensaje"></textarea>
-            <button type="submit">ENVIAR</button>
+            <button  id="enviar">ENVIAR</button>
          </form>
          <img class="contactGif" src="../img/backgrounds/contact-rocket.gif" alt="">
       </div>
@@ -96,6 +96,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"></script>
+      <script src="./script.js"></script>
 </body>
 
 </html>
