@@ -1,18 +1,18 @@
-const validacionEmail = () => {
-    const btnEnvio = document.getElementById('enviar')
-    btnEnvio.onclick = (e) => {
-        e.preventDefault()
-        setTimeout((e) => {
-        e.preventDefault()
+let btn = document.querySelector('#button');
 
-            const nombre = document.getElementById('nombre').value
-            const mail = document.getElementById('email').value
-            const mensaje = document.getElementById('mensaje').value
-            window.location.href = `mailto:inepiazzalonga@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${mail}%0AMensaje%3A${mensaje}`
-            alert("Mensaje enviado")
-        }, 2000)
+document.getElementById('form').addEventListener('submit', function (event) {
+    emailjs.init('PiYl-C39rIpuxbtAj');
 
-    }
-
-
-}
+    event.preventDefault();
+    btn.value = 'ENVIANDO...'
+    emailjs.sendForm('service_96ng8fg', 'template_az2dycb', this)
+        .then(function () {
+            btn.value = 'ENVIAR';
+            Swal.fire('En breve nos pondremos en contacto 🙋')
+            console.log('Mail status: success');
+        }, function (error) {
+            btn.value = 'ENVIAR';
+            Swal.fire(`El mail no pudo ser enviado, intente de nuevo mas tarde 😕`)
+            console.log('Mail status: failed', error);
+        });
+});

@@ -51,8 +51,8 @@
       <h1>Comunicate con nosotros</h1>
       <div class="contactForm__content">
          <img src="../img/logo/yellowk.png" alt="Komunikación isologo">
-         <form>
-            <input type="text" id="nombre" required placeholder="Nombre">
+         <!-- <form >
+            <input for="from_name" type="text" id="nombre" required placeholder="Nombre">
             <input type="text" required placeholder="Apellido">
             <input type="email" id="email" name="email" id="email" required placeholder="Email">
             <select name="consulta" id="mensaje" required>
@@ -62,7 +62,58 @@
             </select>
             <textarea name="" id="" cols="30" rows="8" required placeholder="Mensaje"></textarea>
             <button  id="enviar">ENVIAR</button>
-         </form>
+         </form> -->
+
+         <!-- <form id="contact-form">
+            <label for="to_name">Nombre</label>
+            <input type="text" name="to_name" id="to_name" placeholder="Inserte su nombre" required>
+            <label for="to_email">Mail</label>
+            <input type="email" name="to_email" id="to_email" placeholder="ejemplo@mail.com" required>
+            <label for="options">Asunto</label>
+            <select name="options" id="Select" required>
+               <option>Creación de sitio ecommerce</option>
+               <option>Profesionalizá tu tienda nube</option>
+               <option>Email Marketing</option>
+               <option>Manejo de redes sociales</option>
+               <option >Publicidad en redes sociales</option>
+               <option>Diseño gráfico</option>
+               <option>Otros</option>
+            </select>
+            <label for="text">Consulta</label>
+            <textarea type="text" id="text" rows="6" placeholder="Hola! Quiero consultar por..." required></textarea>
+            <input type="submit" id="button" value=" SEND 📧">
+         </form> -->
+
+         <form id="form">
+            <div class="field">
+              <label for="from_name">Nombre</label>
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+              <label for="reply_to">Email</label>
+              <input type="text" name="reply_to" id="reply_to">
+            </div>
+            <div class="field">
+               <label for="tipo_consulta">Seleccione un servicio</label>
+               <select for="tipo_consulta" name="tipo_consulta" id="tipo_consulta" required>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta">Creación de sitio ecommerce</option>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta">Profesionalizá tu tienda nube</option>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta">Email Marketing</option>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta">Manejo de redes sociales</option>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta" >Publicidad en redes sociales</option>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta">Diseño gráfico</option>
+                  <option for="tipo_consulta" name="tipo_consulta" id="tipo_consulta">Otros</option>
+               </select>
+             </div>
+            <div class="field">
+              <label for="message">Su consulta</label>
+              <input type="text" name="message" id="message">
+            </div>
+          
+            <input type="submit" id="button" value="Send Email" >
+          </form>
+          
+
          <img class="contactGif" src="../img/backgrounds/contact-rocket.gif" alt="">
       </div>
    </div>
@@ -93,10 +144,15 @@
       </footer>
    </div>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
-      <script src="./script.js"></script>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="../email.js"></script>
+   <script src="./script.js"></script>
+
+   <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
