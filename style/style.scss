@@ -482,7 +482,7 @@ header {
             color: $violeta;
          }
 
-         button {
+         #button {
             background: #ec1f53;
             padding: .75rem;
             width: 80%;
@@ -491,6 +491,7 @@ header {
             transition: .3s;
             font-size: 15px;
             border-radius: 2rem;
+            border-style: none;
 
             &:hover {
                padding: .8rem;

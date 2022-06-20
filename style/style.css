@@ -545,7 +545,7 @@ header nav .nav-item a:hover {
   color: #66256C;
 }
 
-.contactForm .contactForm__content form button {
+.contactForm .contactForm__content form #button {
   background: #ec1f53;
   padding: .75rem;
   width: 80%;
@@ -555,9 +555,10 @@ header nav .nav-item a:hover {
   transition: .3s;
   font-size: 15px;
   border-radius: 2rem;
+  border-style: none;
 }
 
-.contactForm .contactForm__content form button:hover {
+.contactForm .contactForm__content form #button:hover {
   padding: .8rem;
   width: 90%;
   font-size: 16px;
