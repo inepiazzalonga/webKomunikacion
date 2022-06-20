@@ -144,7 +144,7 @@
                <button class="verMas">Ver más</button>
             </div>
             <div class="serviceCard__back">
-               <h2>Creación de Sitio <br> E-commerce</h2>
+               <!-- <h2>Creación de Sitio <br> E-commerce</h2> -->
                <p>
                   Tenes un negocio, PYME o empresa y te gustaría vender tus productos o servicios por internet?
 
@@ -168,7 +168,7 @@
 
                </div>
                <div class="serviceCard__back">
-                  <h2>Profesionalizá tu Tienda Nube</h2>
+                  <!-- <h2>Profesionalizá tu Tienda Nube</h2> -->
                   <p>
                      Profesionaliza tu TiendaNube con Komunikacion.
                      Nos adaptamos a la necesidad de cada cliente para optimizar las ventas en su tienda online
@@ -186,7 +186,7 @@
 
                </div>
                <div class="serviceCard__back">
-                  <h2>Email Marketing</h2>
+                  <!-- <h2>Email Marketing</h2> -->
                   <p>
                      Si queres sacarle el máximo provecho al Email Marketing a través de una estrategia personalizada
                      para tu negocio, te ayudamos a implementarla y conseguir así tus objetivos comerciales.
@@ -204,7 +204,7 @@
 
             </div>
             <div class="serviceCard__back">
-               <h2>Manejo de Redes Sociales</h2>
+               <!-- <h2>Manejo de Redes Sociales</h2> -->
                <p>
                   ¿El manejo de Redes Sociales te hace pasar horas frente a tu computadora, editando imágenes y aún así
                   no obtienes resultados? Lo entendemos. Te ayudamos a generar e implementar una estrategia y un plan
@@ -224,11 +224,12 @@
 
                </div>
                <div class="serviceCard__back">
-                  <h2>Publicidad en <br/> Redes Sociales</h2>
+                  <!-- <h2>Publicidad en <br/> Redes Sociales</h2> -->
                   <p>
-                     Nos especializamos en publicidad en Redes Sociales, creamos, gestionamos y optimizamos campañas de Social Ads para conseguir tus objetivos de negocio.
+                     Como agencia especializada en publicidad en RRSS, creamos, gestionamos y optimizamos campañas de Facebook/Instagram y Google. 
 
-                     Nos adaptamos a la estrategia de cada canal y nos encargamos de crear y estructurar campañas de PPC (Pay-Per-Click) para que consigas ventas, tráfico y leads de calidad.
+                     Nos adaptamos a la estrategia de cada canal y nos encargamos de crear y estructurar campañas para conseguir ventas, tráfico y leads de calidad.
+
                   </p>
                </div>
             </div>
@@ -243,7 +244,7 @@
 
                </div>
                <div class="serviceCard__back">
-                  <h2>Diseño Gráfico</h2>
+                  <!-- <h2>Diseño Gráfico</h2> -->
                   <p>
                      Te ofrece el servicio de Diseño Gráfico, creamos una imagen corporativa integral para dar valor a
                      tu marca, empresa u organización.
@@ -270,8 +271,15 @@
          </div>
 
          <form class="suscribeContainer">
-            <input type="text" placeholder="Ingresa tu mail">
-            <button type="submit" class="btnPurple">Suscribirse</button>
+          
+               <div class="field">
+                  <label for="reply_to" ></label>
+                  <input type="text" placeholder="Ingresa tu mail" name="reply_to" id="reply_to">
+                  <button type="submit" class="btnPurple" id="btnSus">Suscribirse</button>
+            <!-- <input type="submit" id="button" value="Suscribirse" > -->
+
+               </div> 
+            
             <p>Suscribite para recibir las últimas novedades</p>
          </form>
 
@@ -286,6 +294,10 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
    </script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script src="./email.js"></script>
+   <script src="./susc.js"></script>
 </body>
 
 </html>

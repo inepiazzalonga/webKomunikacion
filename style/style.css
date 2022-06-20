@@ -276,6 +276,9 @@ header nav .nav-item a:hover {
   transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .services .complete .serviceCard .verMas {
@@ -302,6 +305,7 @@ header nav .nav-item a:hover {
 .services .complete .serviceCard__back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  padding-top: 7em;
 }
 
 .services .complete .serviceCard__back h2 {
@@ -383,6 +387,14 @@ header nav .nav-item a:hover {
 .services .pair .serviceCard__small .serviceCard__back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  font-size: 15px;
 }
 
 .services .pair .serviceCard__small .serviceCard__back h2 {
@@ -398,7 +410,7 @@ header nav .nav-item a:hover {
 
 .services .btnPink {
   background: #ec1f52c6;
-  padding: 1rem 2rem;
+  padding: 1em;
   color: #FFF;
   text-align: center;
   font-family: cocogoose;
@@ -514,7 +526,9 @@ header nav .nav-item a:hover {
   margin-left: 2rem;
 }
 
-.contactForm .contactForm__content form input, .contactForm .contactForm__content form select, .contactForm .contactForm__content form textarea {
+.contactForm .contactForm__content form input,
+.contactForm .contactForm__content form select,
+.contactForm .contactForm__content form textarea {
   text-align: center;
   font-size: 18px;
   width: 100%;
@@ -597,7 +611,8 @@ header nav .nav-item a:hover {
   .yellowBack__bottom h2 {
     margin-top: -2.5rem;
   }
-  .col40, .col60 {
+  .col40,
+  .col60 {
     width: 90%;
     margin: 0 auto;
   }
@@ -716,7 +731,8 @@ header nav .nav-item a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .col40, .col60 {
+  .col40,
+  .col60 {
     width: 90%;
     margin: 0 auto;
   }
@@ -785,7 +801,10 @@ header nav .nav-item a:hover {
 
 /* Laptops grandes a 4K */
 @media only screen and (min-width: 1201px) {
-  nav, .flexContainer, .services, footer {
+  nav,
+  .flexContainer,
+  .services,
+  footer {
     max-width: 1200px;
   }
   header nav {
