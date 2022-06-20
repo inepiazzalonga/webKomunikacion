@@ -540,6 +540,11 @@ header nav .nav-item a:hover {
   outline: 0;
 }
 
+.contactForm .contactForm__content form .option {
+  background-color: transparent;
+  color: #66256C;
+}
+
 .contactForm .contactForm__content form button {
   background: #ec1f53;
   padding: .75rem;
