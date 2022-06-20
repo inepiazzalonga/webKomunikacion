@@ -8,11 +8,11 @@ document.querySelector('.suscribeContainer').addEventListener('submit', function
     emailjs.sendForm('service_96ng8fg', 'template_8sbnztg', this)
         .then(function () {
             btnSus.value = 'ENVIAR';
-            Swal.fire('En breve nos pondremos en contacto 🙋')
+            Swal.fire('Gracias por tu suscripción! Pronto recibirás todas nuestras novedades.')
             console.log('Mail status: success');
         }, function (error) {
             btnSus.value = 'ENVIAR';
-            Swal.fire(`El mail no pudo ser enviado, intente de nuevo mas tarde 😕`)
+            Swal.fire(`No se pudo completar la suscripción, intente de nuevo mas tarde.`)
             console.log('Mail status: failed', error);
         });
 });
