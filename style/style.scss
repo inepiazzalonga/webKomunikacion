@@ -30,11 +30,10 @@ $amarillo: #FEC600;
 }
 body{
    background-color: $amarillo;
-
 }
 
 a {
-   text-decoration: none !important;
+   text-decoration: none!important;
 }
 
 button {
@@ -43,7 +42,7 @@ button {
 }
 
 ul {
-   margin: 0 !important;
+   margin: 0!important;
    margin-block-start: 0;
    padding-inline-start: 0;
 }
@@ -227,7 +226,6 @@ header {
    justify-content: space-between;
    width: 95%;
    margin: -220px auto 2.5rem;
-   column-gap: 1em;
 
    .complete {
       background: #FFF;
@@ -354,7 +352,7 @@ header {
          }
 
          img {
-            width: 70%;
+            width: 80%;
             margin-top: -1rem;
          }
       }
@@ -532,9 +530,10 @@ header {
    }
 
    .yellowBack__top {
-      height: 470px;
+      height: 475px;
       display: flex;
       justify-content: center;
+      background-position-y: -45px;
 
       h1 {
          margin: 12rem 0;
@@ -542,8 +541,8 @@ header {
    }
 
    .usSection {
-      margin-top: -275px;
-      padding: 4rem 0;
+      margin-top: -300px;
+      padding: 6rem 0 4rem;
       flex-wrap: wrap;
 
       .carousel-item {
@@ -585,7 +584,7 @@ header {
          margin-bottom: 1.5rem;
          height: 500px;
 
-         video {
+         img {
             margin-top: 55px;
          }
       }
@@ -597,7 +596,7 @@ header {
             margin-bottom: 1.5rem;
             height: 350px;
 
-            video {
+            img {
                width: 75%;
             }
          }
@@ -695,6 +694,15 @@ header {
       .complete {
          padding: 2.5rem;
          margin-bottom: 2rem;
+         height: 400px;
+
+         .serviceCard__back {
+            padding-top: .5rem;
+         }
+
+         img {
+            margin-top: 35px;
+         }
       }
 
       .pair {
@@ -703,8 +711,8 @@ header {
             padding: 2.5rem;
             margin-bottom: 2rem;
 
-            video {
-               width: 55%;
+            img {
+               width: 60%;
             }
          }
       }
@@ -785,6 +793,7 @@ header {
       .complete {
          padding: 2.5rem;
          margin-bottom: 2rem;
+         height: 600px;
       }
 
       .pair {
@@ -793,8 +802,9 @@ header {
             padding: 2.5rem;
             margin-bottom: 2rem;
 
-            video {
+            img {
                width: 45%;
+               margin-top: -2.25rem;
             }
          }
       }
