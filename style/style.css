@@ -242,6 +242,7 @@ header nav .nav-item a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1em;
   width: 95%;
   margin: -220px auto 2.5rem;
 }
